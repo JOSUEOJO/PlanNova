@@ -1,0 +1,152 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#F4F6F8;
+padding:30px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+h1{
+color:#183B63;
+margin-bottom:30px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+.card h2{
+color:#183B63;
+margin-bottom:15px;
+}
+
+.card p{
+font-size:28px;
+font-weight:bold;
+}
+
+.achievements{
+margin-top:40px;
+background:white;
+padding:25px;
+border-radius:15px;
+}
+
+#badges{
+margin-top:20px;
+}
+
+#badges li{
+margin-bottom:10px;
+font-size:18px;
+}
+.back-btn{
+
+display:inline-block;
+
+margin-bottom:20px;
+
+padding:10px 15px;
+
+background:#183B63;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:10px;
+
+}
+.dark{
+
+background:#1e1e1e;
+
+color:white;
+
+}
+
+.dark .card{
+
+background:#2b2b2b;
+
+color:white;
+
+}
+
+.dark h1,
+.dark h2,
+.dark h3{
+
+color:white;
+
+}
+
+.dark input{
+
+background:#3a3a3a;
+
+color:white;
+
+border:none;
+
+}
+
+.dark button{
+
+background:#305c8f;
+
+}
+.top-nav{
+
+display:flex;
+
+gap:15px;
+
+padding:15px;
+
+background:#183B63;
+
+margin-bottom:20px;
+
+border-radius:12px;
+
+}
+
+.top-nav a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+padding:8px 12px;
+
+border-radius:8px;
+
+}
+
+.top-nav a:hover{
+
+background:#2d5684;
+
+}

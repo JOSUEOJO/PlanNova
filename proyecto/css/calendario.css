@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#F4F6F8;
+    padding:30px;
+}
+
+.calendar-container{
+    max-width:1000px;
+    margin:auto;
+}
+
+h1{
+    color:#183B63;
+    margin-bottom:20px;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.header button{
+    background:#183B63;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.weekdays{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    margin-bottom:10px;
+    font-weight:bold;
+    text-align:center;
+}
+
+#calendar{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:10px;
+}
+
+.day{
+    background:white;
+    min-height:100px;
+    border-radius:10px;
+    padding:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,.1);
+}
+
+.day-number{
+    font-weight:bold;
+    color:#183B63;
+}
+
+.task-marker{
+    margin-top:5px;
+    background:#4A6B8C;
+    color:white;
+    border-radius:5px;
+    padding:3px;
+    font-size:12px;
+}
+.back-btn{
+
+display:inline-block;
+
+margin-bottom:20px;
+
+padding:10px 15px;
+
+background:#183B63;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:10px;
+
+}
+.dark{
+
+background:#1e1e1e;
+
+color:white;
+
+}
+
+.dark .card{
+
+background:#2b2b2b;
+
+color:white;
+
+}
+
+.dark h1,
+.dark h2,
+.dark h3{
+
+color:white;
+
+}
+
+.dark input{
+
+background:#3a3a3a;
+
+color:white;
+
+border:none;
+
+}
+
+.dark button{
+
+background:#305c8f;
+
+}
+.top-nav{
+
+display:flex;
+
+gap:15px;
+
+padding:15px;
+
+background:#183B63;
+
+margin-bottom:20px;
+
+border-radius:12px;
+
+}
+
+.top-nav a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+padding:8px 12px;
+
+border-radius:8px;
+
+}
+
+.top-nav a:hover{
+
+background:#2d5684;
+
+}
