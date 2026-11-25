@@ -1,0 +1,198 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    min-height:100vh;
+    font-family:Arial, sans-serif;
+    background:#F4F6F8;
+}
+
+.sidebar{
+
+    width:250px;
+
+    background:#183B63;
+
+    color:white;
+
+    padding:20px;
+}
+
+.logo{
+    width:180px;
+    margin-bottom:40px;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.sidebar a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    transform:translateX(8px);
+}
+
+main{
+    flex:1;
+    padding:30px;
+}
+
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+}
+
+#clock{
+
+    font-size:24px;
+
+    color:#183B63;
+
+    font-weight:bold;
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+}
+
+.card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card h2{
+
+    color:#183B63;
+}
+
+.card p{
+
+    margin-top:15px;
+
+    font-size:22px;
+}
+
+.nova-box{
+
+    margin-top:40px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+#novaAssistant{
+
+    width:180px;
+
+    animation:float 2s infinite ease-in-out;
+}
+
+.message h2{
+
+    color:#183B63;
+}
+
+.message p{
+
+    margin-top:10px;
+
+    font-size:18px;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+.dark{
+
+background:#1e1e1e;
+
+color:white;
+
+}
+
+.dark .card{
+
+background:#2b2b2b;
+
+color:white;
+
+}
+
+.dark h1,
+.dark h2,
+.dark h3{
+
+color:white;
+
+}
+
+.dark input{
+
+background:#3a3a3a;
+
+color:white;
+
+border:none;
+
+}
+
+.dark button{
+
+background:#305c8f;
+
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANOVA</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#183B63">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo-container">
+            <img src="logo.png" alt="PLANOVA" class="logo">
+        </div>
+
+        <div class="nova-container">
+            <img src="monster.png" id="nova">
+        </div>
+
+        <div class="welcome-box">
+            <h1>Bienvenido a PLANOVA</h1>
+
+            <p id="nova-message">
+                Hola, soy Nova y te ayudaré a organizar tu vida académica.
+            </p>
+
+            <button id="startBtn">
+                Comenzar
+            </button>
+        </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+
+    <script>
+
+if(
+"serviceWorker" in navigator
+){
+
+window.addEventListener(
+"load",
+()=>{
+
+navigator.serviceWorker
+.register(
+"./service-worker.js"
+)
+.then(()=>{
+
+console.log(
+"PLANOVA instalada"
+);
+
+});
+
+});
+
+}
+
+</script>
+
+<button id="installBtn" hidden>
+📲 Instalar PLANOVA
+</button>
+<script>
+
+let deferredPrompt;
+
+window.addEventListener(
+"beforeinstallprompt",
+(e)=>{
+
+e.preventDefault();
+
+deferredPrompt = e;
+
+const btn =
+document.getElementById(
+"installBtn"
+);
+
+btn.hidden = false;
+
+btn.addEventListener(
+"click",
+async ()=>{
+
+btn.hidden = true;
+
+deferredPrompt.prompt();
+
+});
+
+});
+
+</script>
+</body>
+
+</html>

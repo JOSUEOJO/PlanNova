@@ -1,0 +1,22 @@
+{
+  "name": "PLANOVA",
+  "short_name": "PLANOVA",
+  "description": "Agenda inteligente para estudiantes",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#183B63",
+  "theme_color": "#183B63",
+  "orientation": "portrait",
+ "icons": [
+  {
+    "src": "logo.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  },
+  {
+    "src": "logo.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+]
+}
